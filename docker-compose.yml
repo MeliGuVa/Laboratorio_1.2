@@ -38,6 +38,14 @@ services:
     environment:
       - SPARK_MODE=master
 
+    spark-worker:
+      image: bitnami/spark:3.4
+      environment:
+        - SPARK_MODE=worker
+        - SPARK_MASTER_URL=spark://spark-master:7077  # Conexión al Spark Master
+      depends_on:
+        - spark-master
+
 volumes:
   pg_data:
   mongo_data:
