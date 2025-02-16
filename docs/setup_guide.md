@@ -42,7 +42,7 @@ Antes de comenzar, asegúrate de que los siguientes requisitos estén instalados
 
 ## Diagrama de Arquitectura
 
-
+![Arquitectura](https://github.com/MeliGuVa/Laboratorio_1.2/blob/master/image-3.png)
 
 ## Resultados de Validación
 
