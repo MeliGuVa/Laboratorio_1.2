@@ -37,23 +37,7 @@ services:
       - "8080:8080"
     environment:
       - SPARK_MODE=master
-    networks:
-      - spark-network
-
-  spark-worker:
-    image: bitnami/spark:3.4
-    environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark-master:7077
-    depends_on:
-      - spark-master
-    networks:
-      - spark-network
 
 volumes:
   pg_data:
   mongo_data:
-
-networks:
-  spark-network:
-    driver: bridge
