@@ -35,7 +35,7 @@ services:
     image: bitnami/spark:3.4
     ports:
       - "8080:8080"
-      -"7070:7070"
+      - "7070:7070"
     environment:
       - SPARK_MODE=master
 
